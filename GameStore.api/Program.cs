@@ -13,6 +13,7 @@ builder.Services.AddScoped<GameStoreContext>();
 var app = builder.Build();
 
 app.MapGamesEndpoints();
+app.MapGenreEndpoints();
 
 //app.MapGet("/", () => "Hello World!");
 
