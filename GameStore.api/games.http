@@ -3,7 +3,7 @@ GET  http://localhost:5212/games
 
 
 ###
-GET http://localhost:5212/games/5
+GET http://localhost:5212/games/3
 
 ###
 POST http://localhost:5212/games
@@ -17,18 +17,18 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5212/games/5
+PUT http://localhost:5212/games/2
 Content-Type: application/json
 
 {
-    "name": "Elden Ring - Updated",
-    "genre": "Action RPG",
+    "name": "Street Fighter II Turbo",
+    "genreId": 2,
     "price": 49.99,
     "releaseDate": "2022-02-25"
 }
 
 ###
-DELETE http://localhost:5212/games/5
+DELETE http://localhost:5212/games/2
 
 
 

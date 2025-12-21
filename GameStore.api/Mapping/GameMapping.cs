@@ -39,4 +39,18 @@ public static class GameMapping
             game.ReleaseDate
         );
     }
+
+
+    public static Game ToEntity(this UpdateGameDto game, int id)
+    {
+        return new Game()
+            {
+                Id = id,
+                Name = game.Name,
+                //Genre = dbContext.Genres.Find(newGame.GenreId),
+                GenreId = game.GenreId,
+                Price = game.Price,
+                ReleaseDate = game.ReleaseDate
+            };
+    }
 }
