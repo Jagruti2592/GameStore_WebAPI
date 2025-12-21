@@ -10,10 +10,10 @@ POST http://localhost:5212/games
 Content-Type: application/json
 
 {
-    "name": "Elden Ring",
-    "genre": "Action RPG",
-    "price": 59.99,
-    "releaseDate": "2022-02-25"
+    "name": "Final Fantasy XIV",
+    "genreId": 2,
+    "price": 9.99,
+    "releaseDate": "2002-02-25"
 }
 
 ###
