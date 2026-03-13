@@ -1,0 +1,27 @@
+GET http://localhost:5211/games
+
+###
+GET http://localhost:5211/games/6
+
+###
+POST http://localhost:5211/games
+Content-Type: application/json
+
+{
+    "name": "GTA",
+    "genre": "Action-adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03"
+}
+###
+PUT http://localhost:5211/games/6
+Content-Type: application/json
+{
+    "name": "GTA V",
+    "genre": "Action-adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03"
+}
+
+###
+DELETE http://localhost:5211/games/6
