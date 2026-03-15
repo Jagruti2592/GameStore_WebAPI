@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "name": "GTA",
-    "genre": "Action-adventure",
+    "genreId": 1,
     "price": 59.99,
     "releaseDate": "2017-03-03"
 }

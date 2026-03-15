@@ -10,25 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddValidation();
 
-var connString = "Data Source = GameStore.db";
-builder.Services.AddSqlite<GameStoreContext>(
-    connString,
-    optionsAction: options => options.UseSeeding((context, _) =>
-    {
-        if (!context.Set<Genre>().Any())
-        {
-            context.Set<Genre>().AddRange(
-                new Genre { Name = "Action" },
-                new Genre { Name = "Adventure" },
-                new Genre { Name = "RPG" },
-                new Genre { Name = "Strategy" },
-                new Genre { Name = "Sports" }
-            );
-            context.SaveChanges();
-        }
-    })
-    );
-
+builder.AddGameStoreDb();
+  
 var app = builder.Build();
 
 app.MapGamesEndpoints();
