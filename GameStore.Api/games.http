@@ -1,17 +1,17 @@
 GET http://localhost:5211/games
 
 ###
-GET http://localhost:5211/games/6
+GET http://localhost:5211/games/2
 
 ###
 POST http://localhost:5211/games
 Content-Type: application/json
 
 {
-    "name": "GTA",
+    "name": "GTA V",
     "genreId": 1,
-    "price": 59.99,
-    "releaseDate": "2017-03-03"
+    "price": 69.99,
+    "releaseDate": "2018-04-04"
 }
 ###
 PUT http://localhost:5211/games/6
